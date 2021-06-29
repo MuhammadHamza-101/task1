@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7rem;
+          
+        }
+        .text_bar input{
+            margin: 10px;
+            padding: auto;
+            line-height: 1rem;
+            border-radius: 5px;
+            border: 2px solid blue;
+            font-size: 24px;
+            text-align: center;
+            font-family:  monospace;
+         
+        }
+        .btn{
+            font-size: 24px;
+            margin: 1rem;
+            border-radius: 5px;
+            border: 3px solid blue;
+            color: white;
+            background-color: black;
+            cursor: pointer;  
+            font-family:  monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    <div class="text_bar">
+        <input id="Name" type="text" placeholder="Name">
+        
+    <div class="text_bar">
+        <input id="Father_Name" type="text" placeholder="Father Name">
+    </div>
+
+    <div  class="text_bar">
+        <input id="Gmail" type="text" placeholder=" Gmail">
+    </div>
+
+    <div  class="text_bar">
+        <input id="Number" type="text" placeholder="Number">
+    </div>
+
+</div>
+
+    <button onclick="set_LocalStorage()" id="send" class="btn">send</button>
+
+    <button onclick= "get_localStorage()"  class="btn" > checked </button>
+
+</body>
+<script src="app.js"></script>
+
+</html>
