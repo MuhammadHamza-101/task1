@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task1</title>
     <style>
-
-        .container{
+        .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin-top: 7rem;
-          
+
         }
-        .text_bar input{
+
+        .text_bar input {
             margin: 10px;
             padding: auto;
             line-height: 1rem;
@@ -24,24 +24,33 @@
             border: 2px solid blue;
             font-size: 24px;
             text-align: center;
-            font-family:  monospace;
+            font-family: monospace;
             color: rgb(8, 8, 8);
-         
+
         }
-        input:hover{
+
+        input:hover {
             background-color: black;
             color: white;
-            
+
         }
-        .btn{
+
+        .btn {
             font-size: 24px;
-            margin: 1rem;
+          margin-top: 20px;
             border-radius: 5px;
             border: 3px solid blue;
             color: white;
             background-color: black;
-            cursor: pointer;  
-            font-family:  monospace;
+            cursor: pointer;
+            font-family: monospace;
+        }
+        #headings{
+            display: flex;
+           
+            justify-content: center;
+            align-items: center;
+            line-height: 1px;
         }
     </style>
 </head>
@@ -49,28 +58,33 @@
 <body>
     <div class="container">
 
-    <div class="text_bar">
-        <input id="Name" type="text" placeholder="Name">
-    </div>
         <div class="text_bar">
-        <input id="Father_Name" type="text" placeholder="Father Name">
-    </div>
+            <input id="Name" type="text" placeholder="Name">
+         
+        </div>
+        <div class="text_bar">
+            <input id="Father_Name" type="text" placeholder="Father Name">
+        </div>
 
         <div class="text_bar">
-        <input id="Gmail" type="text" placeholder=" Gmail">
-    
-    </div>
+            <input id="Gmail" type="text" placeholder=" Gmail">
+
+        </div>
         <div class="text_bar">
-        <input id="Number" type="text" placeholder="Number">
+            <input id="Number" type="text" placeholder="Number">
+        </div>
+        <button onclick="set_LocalStorage()" id="send" class="btn">send</button>
+        <button class="btn" onclick="get_LocalStorage()">checked</button>
+        <div id="headings">
+
+            <h1 id="name"></h1>
+            <h1 id="fname"></h1>
+            <h1 id="gmail"></h1>
+            <h1 id="phone"></h1>
+           
+        </div>
     </div>
-
-    
-    <button onclick="set_LocalStorage()" id="send" class="btn">send</button>
-    <button class="btn" onclick="get_LocalStorage()">checkdata</button>
-</div>
-
-    <h1 id="paragraph"></h1>
-
+   
 </body>
 <script src="app.js"></script>
 
