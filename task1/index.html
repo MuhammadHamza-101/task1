@@ -25,7 +25,13 @@
             font-size: 24px;
             text-align: center;
             font-family:  monospace;
+            color: rgb(8, 8, 8);
          
+        }
+        input:hover{
+            background-color: black;
+            color: white;
+            
         }
         .btn{
             font-size: 24px;
@@ -45,24 +51,25 @@
 
     <div class="text_bar">
         <input id="Name" type="text" placeholder="Name">
-        
-    <div class="text_bar">
+    </div>
+        <div class="text_bar">
         <input id="Father_Name" type="text" placeholder="Father Name">
     </div>
 
-    <div  class="text_bar">
+        <div class="text_bar">
         <input id="Gmail" type="text" placeholder=" Gmail">
+    
     </div>
-
-    <div  class="text_bar">
+        <div class="text_bar">
         <input id="Number" type="text" placeholder="Number">
     </div>
 
+    
+    <button onclick="set_LocalStorage()" id="send" class="btn">send</button>
+    <button class="btn" onclick="get_LocalStorage()">checkdata</button>
 </div>
 
-    <button onclick="set_LocalStorage()" id="send" class="btn">send</button>
-
-    <button onclick= "get_localStorage()"  class="btn" > checked </button>
+    <h1 id="paragraph"></h1>
 
 </body>
 <script src="app.js"></script>
